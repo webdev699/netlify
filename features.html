@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Detail - Hungry Shark Evolution MOD APK</title>
+    <meta name="description"
+        content="Detailed analysis of Hungry Shark Evolution features, mechanics, and gameplay elements. Technical breakdown of sharks, missions, and environments.">
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --accent-color: #3498DB;
+            --text-color: #333333;
+            --light-gray: #f8f9fa;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #ffffff;
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: var(--light-gray);
+            color: var(--accent-color);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        .card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        .feature-block {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .feature-block:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 40px 0;
+            background-color: var(--light-gray);
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .disclaimer-text {
+            color: #888;
+            font-size: 0.8rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="features.html" class="active">Features</a>
+                <a href="download.html">Download</a>
+                <a href="how-to-install.html">Install</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about-us.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h1>Application Features Breakdown</h1>
+            <p>This section provides a technical and design-focused look at the features inherent in the Hungry Shark
+                Evolution application architecture. It explores the diverse mechanics that define the user experience.
+            </p>
+        </section>
+
+        <section class="card">
+            <div class="feature-block">
+                <h2>1. Advanced Physics Engine</h2>
+                <p>The application utilizes a robust 2D physics engine that simulates underwater movement and buoyancy.
+                    Users control the shark vector through touch inputs, which are translated into velocity and
+                    direction coordinates. This allows for fluid interaction with both the environment and other
+                    entities within the game map.</p>
+            </div>
+
+            <div class="feature-block">
+                <h2>2. Progressive Unlock System</h2>
+                <p>The core progression loop involves a hierarchical unlocking system. As users accrue "points" or
+                    "gold," higher-tier sharks become accessible. This is managed via an internal database of states,
+                    where each shark entity is locked behind a boolean condition dependent on resource accumulation or
+                    previous unlocks.</p>
+            </div>
+
+            <div class="feature-block">
+                <h2>3. Open World Environment</h2>
+                <p>Hungry Shark Evolution features a non-linear, open-world map. Unlike level-based games, the entire
+                    ocean environment is loaded or streamed in chunks. This includes diverse biomes such as tropical
+                    reefs, deep caverns, and arctic zones, each populated with specific NPC (Non-Player Character) types
+                    defined by spawn logic.</p>
+            </div>
+
+            <div class="feature-block">
+                <h2>4. Offline Capabilities</h2>
+                <p>A significant technical feature is the ability to run the main game loop without an active internet
+                    connection. Checksums and save data are stored locally on the device (usually in the AppData
+                    directory), allowing for persistent states across sessions without server-side validation for core
+                    gameplay.</p>
+            </div>
+
+            <div class="feature-block">
+                <h2>5. Graphics and 3D Rendering on 2D Plane</h2>
+                <p>While gameplay occurs on a 2D plane, the assets are rendered as 3D models. The Unity engine (commonly
+                    used for this title) handles 3D mesh rendering, lighting, and textures, projecting them onto the 2D
+                    gameplay camera. This creates a perception of depth and high-fidelity visuals compared to
+                    sprite-based alternatives.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="dmca.html">DMCA</a>
+            </div>
+            <p>&copy; 2025 HungrySharkEvolutionDoc. All rights reserved.</p>
+            <p class="disclaimer-text">This website is an educational fan project and is not affiliated with, endorsed,
+                sponsored, or specifically approved by Ubisoft. All trademarks and registered trademarks are the
+                property of their respective owners.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

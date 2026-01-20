@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hungry Shark Evolution Info</title>
+    <meta name="description"
+        content="About our mission to provide transparent, educational information regarding mobile software modification.">
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --accent-color: #3498DB;
+            --text-color: #333333;
+            --light-gray: #f8f9fa;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #ffffff;
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            margin-bottom: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: var(--light-gray);
+            color: var(--accent-color);
+        }
+
+        main {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        .card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 40px 0;
+            background-color: var(--light-gray);
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .disclaimer-text {
+            color: #888;
+            font-size: 0.8rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="download.html">Download</a>
+                <a href="how-to-install.html">Install</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about-us.html" class="active">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h1>About Us</h1>
+            <p>HungrySharkEvolutionDoc is an independent educational platform dedicated to documenting mobile gaming
+                technology and software modification architecture. Our mission is to provide clear, safe, and factual
+                information to users interested in the technical aspects of Android applications.</p>
+
+            <p>We are a team of tech enthusiasts and writers who believe in the importance of transparency in the
+                software ecosystem. We analyze updates, patches, and version histories to help users understand what
+                they are installing on their devices.</p>
+
+            <p><strong>Our Core Code of Ethics:</strong></p>
+            <ul>
+                <li style="margin-bottom: 10px; color: #555;"><strong>Transparency:</strong> We clearly distinguish
+                    between official and unofficial software.</li>
+                <li style="margin-bottom: 10px; color: #555;"><strong>Safety:</strong> We prioritize user security and
+                    warn against potential risks of sideloading.</li>
+                <li style="margin-bottom: 10px; color: #555;"><strong>Legality:</strong> We respect intellectual
+                    property rights and comply with DMCA requests promptly.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about-us.html">About Us</a>
+                <a href="contact-us.html">Contact Us</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="dmca.html">DMCA</a>
+            </div>
+            <p>&copy; 2025 HungrySharkEvolutionDoc. All rights reserved.</p>
+            <p class="disclaimer-text">This website is an educational fan project and is not affiliated with, endorsed,
+                sponsored, or specifically approved by Ubisoft. All trademarks and registered trademarks are the
+                property of their respective owners.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
